@@ -21,8 +21,8 @@ pipeline {
 	       sh ' ls '
          sh 'cat /var/lib/jenkins/OWASP-Dependency-Check/reports/dependency-check-report.xml'
         
-      //}
-    //}
+      }
+    }
     stage ('Build') {
       steps {
       sh 'mvn clean package'
